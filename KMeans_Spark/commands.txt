@@ -1,0 +1,11 @@
+mvn clean install package
+
+path to data path to save initial centroids path to save the resulting clusters path to save final centroids and path to save the number of iterations and time taken.
+
+java -jar wordcount-1.0.jar "/home/abdelrahman/Downloads/iris.data" "output/initialCentroids" "output/clusterOutput" "output/finalCentroids" "output/noIterations.txt"
+
+
+
+Path to groundtruth, path to initial centroids and path to cluster output of spark
+
+python3 clustering_evaluation.py /home/abdelrahman/Downloads/iris.data /home/abdelrahman/Downloads/KMeans_Spark/target/output/initialCentroids/part-00000 /home/abdelrahman/Downloads/KMeans_Spark/target/output/clusterOutput/part-00000
